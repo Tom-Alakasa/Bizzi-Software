@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 type Platform = "windows";
 
 interface Props {
@@ -23,7 +21,6 @@ const platforms: {
 ];
 
 export default function Hero({ activePlatform }: Props) {
-  const [hovered, setHovered] = useState<Platform | null>(null);
   const active = platforms.find((p) => p.id === activePlatform)!;
 
   return (
@@ -95,9 +92,9 @@ export default function Hero({ activePlatform }: Props) {
             marginBottom: 20,
           }}
         >
-          Everything you need,
+          Tudo o que seu comércio precisa,
           <br />
-          <span style={{ color: "var(--a)" }}>always within reach.</span>
+          <span style={{ color: "var(--a)" }}> em um só lugar.</span>
         </h1>
 
         {/* Subhead */}
@@ -111,8 +108,8 @@ export default function Hero({ activePlatform }: Props) {
             fontWeight: 400,
           }}
         >
-          Lumis is a unified workspace for your notes, tasks, and references —
-          fast, local-first, and beautifully focused.
+          O Bizzi é um aplicativo de trabalho unificado para suas notas, tarefas
+          e produtos — com um design elegante e focado.
         </p>
 
         {/* Platform selector */}
@@ -127,42 +124,7 @@ export default function Hero({ activePlatform }: Props) {
             marginBottom: 20,
             boxShadow: "var(--shadow-sm)",
           }}
-        >
-          {platforms.map((p) => (
-            <button
-              key={p.id}
-              onClick={() => "a"}
-              style={{
-                padding: "8px 20px",
-                borderRadius: 8,
-                border: "none",
-                cursor: "pointer",
-                fontSize: 13,
-                fontWeight: 600,
-                fontFamily: "var(--font-ui)",
-                background:
-                  activePlatform === p.id
-                    ? "var(--a)"
-                    : hovered === p.id
-                      ? "var(--aside)"
-                      : "transparent",
-                color:
-                  activePlatform === p.id
-                    ? "var(--text-on-accent)"
-                    : "var(--text-secondary)",
-                transition: "all 0.15s var(--ease)",
-                display: "flex",
-                alignItems: "center",
-                gap: 6,
-              }}
-              onMouseEnter={() => setHovered(p.id)}
-              onMouseLeave={() => setHovered(null)}
-            >
-              <span style={{ fontSize: 14 }}>{p.icon}</span>
-              {p.label}
-            </button>
-          ))}
-        </div>
+        ></div>
 
         {/* Download button */}
         <div>
@@ -210,7 +172,7 @@ export default function Hero({ activePlatform }: Props) {
                 strokeLinecap="round"
               />
             </svg>
-            Download for {active.label}
+            Baixar para {active.label}
           </a>
 
           <p
@@ -220,16 +182,13 @@ export default function Hero({ activePlatform }: Props) {
               color: "var(--text-tertiary)",
               letterSpacing: "0.01em",
             }}
-          >
-            v{active.version} · {active.size} · Free to start
-          </p>
+          ></p>
         </div>
 
         {/* Other platforms */}
         <p
           style={{ marginTop: 24, fontSize: 13, color: "var(--text-tertiary)" }}
         >
-          Also available on{" "}
           {platforms
             .filter((p) => p.id !== activePlatform)
             .map((p, i, arr) => (

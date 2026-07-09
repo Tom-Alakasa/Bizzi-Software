@@ -79,7 +79,7 @@ export default function Nav() {
             gap: 32,
           }}
         >
-          {["Features", "Changelog", "Docs", "Pricing"].map((item) => (
+          {["Como usar", "Preços", "Quem somos?"].map((item) => (
             <a
               key={item}
               href="#"
@@ -129,7 +129,7 @@ export default function Nav() {
             e.currentTarget.style.transform = "translateY(0)";
           }}
         >
-          Download
+          Baixar
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
             <path
               d="M6 1v7M3 5.5l3 3 3-3"

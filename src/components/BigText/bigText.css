@@ -1,0 +1,7 @@
+.bigText {
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 70px;
+  text-align: center;
+}

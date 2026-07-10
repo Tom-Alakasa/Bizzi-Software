@@ -1,0 +1,110 @@
+:root {
+  --a: #5b5bf7;
+  --a-hover: #4a4ae6;
+  --text: #111827;
+  --text-secondary: #6b7280;
+  --text-on-accent: #fff;
+  --border: #e5e7eb;
+  --shadow-accent: 0 8px 20px rgba(91, 91, 247, 0.2);
+  --radius-sm: 10px;
+  --ease: ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+#navbar.scrolled {
+  background: rgba(241, 241, 248, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  height: 60px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--a);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: var(--shadow-accent);
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.links a:hover {
+  color: var(--text);
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+
+  background: var(--a);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+
+  box-shadow: var(--shadow-accent);
+  transition: 0.2s;
+}
+
+.btn-download:hover {
+  background: var(--a-hover);
+  transform: translateY(-1px);
+}
+.moonIcone {
+  background-color: red;
+}

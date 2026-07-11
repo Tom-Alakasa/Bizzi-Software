@@ -52,35 +52,6 @@ export default function Hero({ activePlatform }: Props) {
       />
 
       <div style={{ maxWidth: 760, margin: "0 auto", position: "relative" }}>
-        {/* Version badge */}
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 8,
-            padding: "5px 14px",
-            background: "var(--a-soft)",
-            border: "1px solid var(--a-soft-strong)",
-            borderRadius: 100,
-            fontSize: 12,
-            fontWeight: 600,
-            color: "var(--a-text-on)",
-            marginBottom: 28,
-            letterSpacing: "0.01em",
-          }}
-        >
-          <span
-            style={{
-              width: 6,
-              height: 6,
-              borderRadius: "50%",
-              background: "var(--a)",
-              display: "inline-block",
-            }}
-          />
-          Version 3.4.1 — Now with AI-powered search
-        </div>
-
         {/* Headline */}
         <h1
           style={{

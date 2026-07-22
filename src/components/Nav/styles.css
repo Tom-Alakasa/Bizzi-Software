@@ -1,6 +1,6 @@
 :root {
-  --a: #5b5bf7;
-  --a-hover: #4a4ae6;
+  --a: #2563eb;
+  --a-hover: #1d4ed8;
   --text: #111827;
   --text-secondary: #6b7280;
   --text-on-accent: #fff;
@@ -40,30 +40,6 @@
   justify-content: space-between;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo span {
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.logo-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: var(--a);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: var(--shadow-accent);
-}
-
 .links {
   display: flex;
   gap: 32px;
@@ -75,6 +51,7 @@
   font-size: 14px;
   font-weight: 500;
   transition: 0.2s;
+  font-size: medium;
 }
 
 .links a:hover {
@@ -109,4 +86,14 @@
 .color-button {
   padding: 5px;
   margin-left: 5px;
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.color-button:hover {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .links {
+    display: none;
+  }
 }

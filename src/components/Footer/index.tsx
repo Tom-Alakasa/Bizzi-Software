@@ -1,3 +1,4 @@
+import { Logo } from "../Logo";
 import "./footer.css";
 
 export default function Footer() {
@@ -11,7 +12,7 @@ export default function Footer() {
           </div>
 
           <a href="#download" className="footer-btn">
-            Baixar Bizzi
+            Baixar Axiom
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path
                 d="M7 2v8M4 7.5l3 3 3-3"
@@ -30,35 +31,10 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="footer-grid">
-          <div className="footer-brand">
-            <div className="footer-logo">
-              <div className="footer-logo-icon">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                  <path
-                    d="M8 2L13 5.5V10.5L8 14L3 10.5V5.5L8 2Z"
-                    fill="white"
-                    fill-opacity=".9"
-                  />
-                  <path
-                    d="M8 5L11 6.8V10.2L8 12L5 10.2V6.8L8 5Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-
-              <span>Lumis</span>
-            </div>
-
-            <p>
-              The workspace for focused people. Fast, local-first, and
-              beautifully simple.
-            </p>
-          </div>
-        </div>
+        <div className="footer-grid"></div>
 
         <div className="footer-bottom">
-          <p>© 2025 Lumis Inc. All rights reserved.</p>
+          <Logo></Logo>
 
           <div className="footer-social">
             <a href="#">Twitter</a>

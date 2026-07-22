@@ -65,7 +65,7 @@ export default function Hero({ activePlatform }: Props) {
         >
           Tudo o que seu comércio precisa,
           <br />
-          <span style={{ color: "var(--a)" }}> em um só lugar.</span>
+          <span style={{ color: "#2563eb" }}> em um só lugar.</span>
         </h1>
 
         {/* Subhead */}
@@ -79,7 +79,7 @@ export default function Hero({ activePlatform }: Props) {
             fontWeight: 400,
           }}
         >
-          O Bizzi é um aplicativo de trabalho unificado para suas notas, tarefas
+          O Axiom é um aplicativo de trabalho unificado para suas notas, tarefas
           e produtos — com um design elegante e focado.
         </p>
 

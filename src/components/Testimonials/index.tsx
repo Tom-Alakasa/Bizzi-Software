@@ -1,7 +1,7 @@
 const testimonials = [
   {
     quote:
-      "O Bizzi facilitou muito o controle dos meus produtos. A interface é simples, rápida e consigo acompanhar meu estoque sem complicação. Desde que comecei a usar, reduzi bastante os erros de cadastro. Recomendo para quem procura praticidade.",
+      "O Axiom facilitou muito o controle dos meus produtos. A interface é simples, rápida e consigo acompanhar meu estoque sem complicação. Desde que comecei a usar, reduzi bastante os erros de cadastro. Recomendo para quem procura praticidade.",
     author: "Pedro da Costa",
     role: "Gerente de Padaria",
     avatar: "PC",
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     quote:
-      "O Bizzi é uma ótima ferramenta para organizar produtos. O aplicativo é fácil de usar e cumpre bem sua proposta. Ainda espero algumas funcionalidades novas nas próximas atualizações, mas até agora minha experiência tem sido muito positiva.",
+      "O Axiom é uma ótima ferramenta para organizar produtos. O aplicativo é fácil de usar e cumpre bem sua proposta. Ainda espero algumas funcionalidades novas nas próximas atualizações, mas até agora minha experiência tem sido muito positiva.",
     author: "Sofia Felix",
     role: "Loja independente",
     avatar: "SF",

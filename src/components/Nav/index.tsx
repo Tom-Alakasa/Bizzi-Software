@@ -1,25 +1,12 @@
 import "./styles.css";
 import "./";
 import { BiMoon } from "react-icons/bi";
+import { Logo } from "../Logo";
 export default function Nav() {
   return (
     <nav id="navbar">
       <div className="container">
-        <div className="logo">
-          <div className="logo-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path
-                d="M8 2L13 5.5V10.5L8 14L3 10.5V5.5L8 2Z"
-                fill="white"
-                fill-opacity="0.9"
-              />
-              <path d="M8 5L11 6.8V10.2L8 12L5 10.2V6.8L8 5Z" fill="white" />
-            </svg>
-          </div>
-
-          <span>Bizzi</span>
-        </div>
-
+        <Logo></Logo>
         <div className="links">
           <a href="#">Como usar</a>
           <a href="#">Preços</a>

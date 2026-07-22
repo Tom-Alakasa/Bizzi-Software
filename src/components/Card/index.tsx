@@ -10,7 +10,7 @@ type CardProps = {
 export default function Card({ icon: Icon, title, description }: CardProps) {
   return (
     <div className={styles.card}>
-      <div className={styles.cardIcon}>{Icon }</div>
+      <div className={styles.cardIcon}>{Icon}</div>
 
       <h3>{title}</h3>
       <p>{description}</p>

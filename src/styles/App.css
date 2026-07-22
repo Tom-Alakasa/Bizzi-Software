@@ -1,57 +1,123 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
 :root {
-  --surface-0: #f1f1f8;
-  --surface-1: #fafafc;
-  --surface-2: #ffffff;
-  --aside: #eceef7;
+  :root {
+    /* ==========================================
+     🎨 AXIOM WORKSPACE DESIGN SYSTEM
+     ========================================== */
 
-  --a: #5b5fef;
-  --a-hover: #4548c9;
-  --a-active: #3a3dab;
-  --a-soft: #eeedfe;
-  --a-soft-strong: #cecbf6;
-  --a-text-on: #26215c;
+    /* ===== Brand ===== */
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --primary-light: #dbeafe;
 
-  --warm: #b8860b;
-  --warm-soft: #faeeda;
-  --warm-text-on: #412402;
+    /* ===== Status ===== */
+    --success: #22c55e;
+    --success-light: #dcfce7;
 
-  --border: #e2e2ec;
-  --border-strong: #cfd0dd;
+    --warning: #f59e0b;
+    --warning-light: #fef3c7;
 
-  --text: #0f1220;
-  --text-secondary: #5c5f6e;
-  --text-tertiary: #8b8ea0;
-  --text-on-accent: #ffffff;
+    --danger: #ef4444;
+    --danger-light: #fee2e2;
 
-  --good: #1a8754;
-  --good-soft: #e1f5ee;
-  --good-text-on: #04342c;
+    --info: #7c3aed;
+    --info-light: #ede9fe;
 
-  --bad: #d0342c;
-  --bad-soft: #fcebeb;
-  --bad-text-on: #501313;
+    /* ===== Background ===== */
+    --background: #f1f5f9;
+    --surface: #ffffff;
+    --surface-secondary: #e2e8f0;
+    --surface-hover: #cbd5e1;
 
-  --shadow-sm: 0 1px 2px rgba(15, 18, 32, 0.05);
-  --shadow-md: 0 6px 16px rgba(15, 18, 32, 0.08);
-  --shadow-lg: 0 16px 40px rgba(15, 18, 32, 0.12);
-  --shadow-accent: 0 8px 20px rgba(91, 95, 239, 0.25);
+    /* ===== Sidebar ===== */
+    --sidebar: #0f172a;
+    --sidebar-hover: #1e293b;
+    --sidebar-active: #2563eb;
+    --sidebar-text: #cbd5e1;
 
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
+    /* ===== Text ===== */
+    --text: #0f172a;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    --text-inverse: #ffffff;
 
-  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: "IBM Plex Mono", "SF Mono", monospace;
+    /* ===== Borders ===== */
+    --border: #cbd5e1;
+    --border-light: #e2e8f0;
+    --border-dark: #94a3b8;
 
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    /* ===== Inputs ===== */
+    --input-bg: #ffffff;
+    --input-border: #cbd5e1;
+    --input-focus: #2563eb;
+    --placeholder: #94a3b8;
+
+    /* ===== Buttons ===== */
+    --button-primary: var(--primary);
+    --button-primary-hover: var(--primary-hover);
+
+    --button-secondary: #e2e8f0;
+    --button-secondary-hover: #cbd5e1;
+
+    /* ===== Shadows ===== */
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+    --shadow-md: 0 4px 6px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 10px 15px rgba(15, 23, 42, 0.12);
+
+    /* ===== Radius ===== */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --radius-full: 9999px;
+
+    /* ===== Transition ===== */
+    --transition: 0.25s ease;
+
+    /* ===== Layout ===== */
+    --sidebar-width: 270px;
+    --header-height: 72px;
+  }
+
+  [data-theme="dark"] {
+    --background: #020617;
+    --surface: #0f172a;
+    --surface-secondary: #1e293b;
+    --surface-hover: #334155;
+
+    --sidebar: #020617;
+    --sidebar-hover: #0f172a;
+    --sidebar-active: #2563eb;
+    --sidebar-text: #cbd5e1;
+
+    --text: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-inverse: #ffffff;
+
+    --border: #334155;
+    --border-light: #475569;
+    --border-dark: #64748b;
+
+    --input-bg: #1e293b;
+    --input-border: #334155;
+    --input-focus: #3b82f6;
+    --placeholder: #64748b;
+
+    --button-secondary: #1e293b;
+    --button-secondary-hover: #334155;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.45);
+  }
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Google Sans", sans-serif;
 }
 
 html {

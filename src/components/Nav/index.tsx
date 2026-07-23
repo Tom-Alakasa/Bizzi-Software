@@ -1,6 +1,5 @@
 import "./styles.css";
 import "./";
-import { BiMoon } from "react-icons/bi";
 import { Logo } from "../Logo";
 export default function Nav() {
   return (
@@ -31,10 +30,7 @@ export default function Nav() {
               />
             </svg>
           </a>
-          <button className="color-button">
-            {" "}
-            {<BiMoon size={20}></BiMoon>}
-          </button>
+        
         </div>
       </div>
     </nav>
